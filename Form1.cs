@@ -75,7 +75,7 @@ namespace CST117Project
 
 
 
-
+            //Formats then sets the text to the calculated numer (3 decimal places)
             tb_finalWeight.Text = String.Format("{0:0.000}", ew);
 
         }
