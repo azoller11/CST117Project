@@ -45,6 +45,7 @@ namespace CST117Project
                 ew = Double.Parse(tb_enterWeight.Text);
             } catch (FormatException)
             {
+                //Checks is the user has selected a celestial body
                 MessageBox.Show("Please enter your weight in pounds (lbs)");
             }
           
