@@ -21,12 +21,15 @@ namespace CST117Project
             lb_planets.Items.Add("Saturn");
             lb_planets.Items.Add("Jupiter");
             lb_planets.Items.Add("Moon");
+            lb_planets.Items.Add("Earth");
+            lb_planets.SetSelected(0, true);
+            
 
         }
 
         private void lb_planets_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+           
         }
 
         private void tb_finalWeight_TextChanged(object sender, EventArgs e)
@@ -68,7 +71,12 @@ namespace CST117Project
             } else if (lb_planets.SelectedIndex == 5)
             {
                 ew *=  0.1622; //Moon Conversion
-            } else
+            } else if (lb_planets.SelectedIndex == 6)
+            {
+                ew *= 1.0; //Earth Conversion lol why??
+                
+            }
+            else
             {
                 MessageBox.Show("Please select a celestial body.");
             }
@@ -87,6 +95,16 @@ namespace CST117Project
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pb_planet_Click(object sender, EventArgs e)
         {
 
         }
