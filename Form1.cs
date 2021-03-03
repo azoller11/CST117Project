@@ -45,6 +45,7 @@ namespace CST117Project
 
             try
             {
+                tb_enterWeight.Text = String.Format("{0:0.000}", Double.Parse(tb_enterWeight.Text));
                 ew = Double.Parse(tb_enterWeight.Text);
             } catch (FormatException)
             {
@@ -105,6 +106,25 @@ namespace CST117Project
         }
 
         private void pb_planet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_enterWeight_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
